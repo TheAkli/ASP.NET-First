@@ -8,25 +8,29 @@
     <title></title>
 </head>
 <body>
-    <form id="lblName" runat="server">
-        <div id="txtName">
-            Name:
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
+ <form id="form1" runat="server">
+        <div>
         </div>
-        <asp:ListBox ID="lstLocation" runat="server" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged">
-            <asp:ListItem>HTML</asp:ListItem>
-            <asp:ListItem>CSS</asp:ListItem>
-            <asp:ListItem>JS</asp:ListItem>
+        <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
+&nbsp;<asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:ListBox ID="lstLocation" runat="server">
+            <asp:ListItem>Html</asp:ListItem>
+            <asp:ListItem>c++</asp:ListItem>
+            <asp:ListItem>php</asp:ListItem>
         </asp:ListBox>
         <br />
-        <asp:CheckBox ID="chkC" runat="server" Text="BootsTraap" />
         <br />
-        <asp:CheckBox ID="CheckBox2" runat="server" Text="Angular" />
         <br />
-        <p>
-            <asp:Button ID="Button1" runat="server" Text="Valider" />
-        </p>
+        <asp:RadioButton ID="chkASP" runat="server" Text="ASP" />
+        <br />
+        <asp:RadioButton ID="chkC" runat="server" Text="c++" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
     </form>
 </body>
 </html>
